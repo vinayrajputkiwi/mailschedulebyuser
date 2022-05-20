@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Schedule</title>
+</head>
+<body>
+   <form action="" method="POST" novalidate>
+       {% csrf_token %}
+       {{form.as_p}}
+       <label for="TimeAndDate">TimeAndDate: </label>
+       <input type="text" name="minute" placeholder="minute" style="width: 50px;">
+       <input type="text" name="hour" placeholder="hours" style="width: 50px;">
+       <input type="text" name="day_of_week" placeholder="DaysOfWeek" style="width: 80px;">
+       <input type="text" name="day_of_month" placeholder="DaysOfMonth" style="width: 85px;">
+       <input type="text" name="month_of_year" placeholder="MonthOfYear" style="width: 80px;"><br>
+       <input type="submit" value="Submit">
+   </form>
+</body>
+</html>
